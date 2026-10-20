@@ -22,8 +22,8 @@ REGION_BASE_URLS = {
 }
 DEFAULT_REGION = "global_en"
 
-# Executable text models. The first entry is the default.
-SUPPORTED_MODELS = ["MiniMax-M3", "MiniMax-M2.7"]
+# Recommended text models. Explicit MINIMAX_MODEL overrides remain supported.
+SUPPORTED_MODELS = ["MiniMax-M3.1-Flash", "MiniMax-M3"]
 DEFAULT_MODEL = SUPPORTED_MODELS[0]
 
 

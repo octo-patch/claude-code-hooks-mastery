@@ -123,6 +123,11 @@ flowchart TB
 **Payload:** `stop_hook_active` boolean flag  
 **Enhanced:** AI-generated completion messages with TTS playback (LLM priority: OpenAI > Anthropic > MiniMax > Ollama > random)
 
+MiniMax uses `MiniMax-M3.1-Flash` by default. Set `MINIMAX_MODEL=MiniMax-M3`
+to select M3; explicit saved, legacy, or custom model IDs are passed through unchanged.
+Set `MINIMAX_API_KEY` to enable it, and choose `MINIMAX_REGION=global_en` (default)
+or `cn_zh`. `MINIMAX_BASE_URL` overrides the regional endpoint when set.
+
 ### 6. SubagentStop Hook
 **Fires:** When Claude Code subagents (Task tools) finish responding  
 **Payload:** `stop_hook_active` boolean flag  
